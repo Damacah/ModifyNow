@@ -30,3 +30,5 @@ This is one of my first proyects, don't blame me for bad code or for putting the
 
 This is licensed under the The GNU General Public License v3.0:
 https://www.gnu.org/licenses/gpl-3.0.html
+
+Credit is heavily appreciated.

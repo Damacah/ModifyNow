@@ -17,12 +17,18 @@ namespace ModifyNow {
             InitializeComponent();
 
             string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            string filePath = Path.Combine(appDataPath + "//ModifyNow//", "config.json");
+            string folderPath = Path.Combine(appDataPath, "ModifyNow");
+            string filePath = Path.Combine(folderPath, "config.json");
 
-            // Check if the JSON file exists
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
             if (File.Exists(filePath))
             {
                 currentLanguageText();
+                changeGUI();
             }
             else
             {
@@ -31,17 +37,9 @@ namespace ModifyNow {
                 {
                     language = "EN"
                 };
-
-                // Serialize the JSON object
                 string jsonData = JsonSerializer.Serialize(jsonObject);
-
-                // Save the JSON data to the file
                 File.WriteAllText(filePath, jsonData);
-
-                Console.WriteLine("Config file created with default values.");
             }
-
-            changeGUI();
         }
 
         string appDataFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);

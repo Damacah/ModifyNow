@@ -40,6 +40,8 @@ namespace ModifyNow {
                 string jsonData = JsonSerializer.Serialize(jsonObject);
                 File.WriteAllText(filePath, jsonData);
             }
+
+
         }
 
         string appDataFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
@@ -564,6 +566,3 @@ namespace ModifyNow {
         
     }
 }
-
-
-

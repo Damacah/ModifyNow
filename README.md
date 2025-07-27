@@ -1,29 +1,26 @@
 # ModifyNow
 
-ModifyNow is an easy tool to install Minecraft mods. 
-It is made in C# and WindowsForms (I know, a little bit outdated).
+ModifyNow is a simple tool to move Minecraft mods into the AppData directory.
 
-## Installing mods
+## Installing Mods
 
-With this tool, you can do two primary things:
+With this tool, you can select mods and move them directly into the `%appdata%/.minecraft/mods` folder. You can install mods from .zip or .jar files.
 
-Install mods: It will delete all the mods in the mods folder and move in the new mods. You can install mods from a RAR/ZIP, by selecting a folder (it puts all the JAR files in the mods folder) and by manually selecting the RAR files.
+You also have the option to delete old mods from the folder when doing so.
 
-Update mods: It won't delete the mods in the mods folder, it will just add the new mods. You can add mods from a RAR/ZIP or by selecting JAR files.
+## Language Support
 
-## Language change
-
-It offers a language change between English and Spanish. English is the default language.
+You can switch between English and Spanish. English is the default.
 
 ## IMPORTANT
 
-This tool won't install any mod loader on your computer (such as forge/fabric). It will put the mods into the .minecraft/mods folder in order to make it easier and faster for all the users.
+This tool does **not** install any mod loader on your computer (such as forge/fabric). It only moves the mods into the correct folder.
 
-If you want to install these mod loaders, do that by going into their official websites.
+If you need to install a mod loader, please visit their official websites.
 
-## Please,
+## Other Info
 
-This is one of my first projects, don't blame me for bad code or for putting the translations on the code (I know, it is really bad). Thanks for taking the time to read this, and enjoy this tool!
+This tool was originally created in 2023 because some friends kept asking me where to move Minecraft mods. It was first built using C# and Windows Forms. Later, I decided to remake it in Python to make it simpler and portable. The old version is still available in the `old` folder in the source code.
 
 ## License
 
@@ -31,3 +28,7 @@ This is licensed under the GNU General Public License v3.0:
 https://www.gnu.org/licenses/gpl-3.0.html
 
 Credit is heavily appreciated.
+
+---
+
+**This project is not affiliated with or endorsed by Minecraft, Mojang, or Microsoft in any way.**

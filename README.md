@@ -2,6 +2,11 @@
 
 ModifyNow is a simple tool to move Minecraft mods into the AppData directory.
 
+
+<img width="402" height="232" alt="En" src="https://github.com/user-attachments/assets/b203264a-f1d7-4c5d-92fc-0d12e24e4951" />
+<img width="402" height="232" alt="Es" src="https://github.com/user-attachments/assets/01eb906d-285a-4251-9c21-6ee244b6d01f" />
+<img width="402" height="232" alt="Completed" src="https://github.com/user-attachments/assets/852d7af6-28c5-444d-8875-ccb15fa7b8be" />
+
 ## Installing Mods
 
 With this tool, you can select mods and move them directly into the `%appdata%/.minecraft/mods` folder. You can install mods from .zip or .jar files.
